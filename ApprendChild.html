@@ -1,0 +1,17 @@
+<html>
+<head><title>createElement + apprendChild</title></head>
+<body>
+<button onclick="ajouterParagraphe()">Ajouter un paragraphe</button>
+<script>
+//but: créer un nouvel élément HTML avec jAVASCRIPT
+//let pp = document.createElement("p"); Ne s'affiche pas encore.il faut l'ajouter dans la page.
+//document.body.apprendChild(pp);Donc il s'affiche maitenant
+//Exemple:
+function ajouterParagraphe() {
+	let p = document.createElement("p");
+	p.textContent = "Paragraphe ajouté dynamiquement";
+	document.body.apprendChild(p);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function ajouter() {
+var elt = document.createElement("tr");
+elt.class = "lignes";
+document.getElementById("tb").appendChild(elt);
+var cases1 = document.createElement("td");
+cases1.innerHTML = prompt("id :");
+elt.appendChild(cases1);
+var cases2 = document.createElement("td");
+cases2.innerHTML = prompt("Nom :");
+elt.appendChild(cases2);}
+</script>
+<style>
+table, tr, td, th {
+border: solid 2px;
+border-collapse: collapse;}
+</style>
+</head>
+<body>
+<h1>Exercice sur l’ajout d’élément</h1>
+<table id="tb">
+<tr>
+<th>MON_ID</th>
+<th>MON Nom</th>
+</tr>
+</table>
+<button onclick="ajouter()">Ajouter une ligne</button>
+</body>
+</html>

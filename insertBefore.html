@@ -1,0 +1,17 @@
+<html>
+<head><title>createElement/insertBefore</title></head>
+<body>
+<div id="T1"><p id="cible">Paragraphe cible</p></div>
+<button onclick="ajouterAvant()">Ajouter avant</button>
+<script>
+
+function ajouterAvant() {
+	let nouveau = document.createElement("p");
+	nouveau.textContent = "Inséré avant";
+	let parent = document.getElementById('T1');
+	let cible = document.getElementById('cible');
+    parent.insertBefore(nouveau, cible);}
+	
+</script>
+</body>
+</html>

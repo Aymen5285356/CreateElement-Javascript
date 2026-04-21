@@ -1,0 +1,16 @@
+<html>
+<head><title>insertAfter simplifié</title></head>
+<body>
+<div id="parent"><p id="R1">Paragraphe cible</p></div>
+<button onclick="
+	let ref = document.createElement('R1');
+	let nouveau = document.createElement('p');
+	nouveau.textContent = 'Inséré aprés';
+    ref.parentNode.insertBefore(nouveau, ref.nextSibling);">Ajouter aprés</button>
+</button>
+<script>
+//Pour faire u insertAfter
+//tu dois passer par :ref.parentNode.insertBefore(nouveau, ref.nextSibling):
+</script>
+</body>
+</html>
